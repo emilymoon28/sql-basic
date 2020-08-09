@@ -42,4 +42,5 @@ where dept.dept_name in ('Sales','Development');
 --In descending order, list the frequency count of employee last names, i.e., how many employees share each last name
 select last_name, count(emp_no) as name_count
 from employees
-group by last_name;
+group by last_name
+order by name_count desc;
